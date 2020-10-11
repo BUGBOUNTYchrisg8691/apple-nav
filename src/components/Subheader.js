@@ -18,6 +18,7 @@ const StyledDiv = styled.div`
 const NavLinkStyled = styled(NavLink)`
     text-decoration: none;
     color: ${props => props.theme.black};
+    text-align: center;
 `
 
 export default function Subheading() {
