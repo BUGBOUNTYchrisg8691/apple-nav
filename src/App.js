@@ -14,7 +14,12 @@ export default function App() {
 
     return (
         <div className="app">
-            <Header key="header" links={links}/>
+            <Route path="/">
+                <Header key="header" links={links}/>
+            </Route>
+            <Route exact path="/:path">
+                <Subheader key={`sub-header/${params}`} path="/:path" />
+            </Route>
             {/* <header className="app-header">
                 {links.map(link => {
                     // console.log(link.text)
