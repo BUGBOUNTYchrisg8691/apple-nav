@@ -1,10 +1,12 @@
-export default links = [{
-        text: "Home",
-        icon: ""
+export const links = [{
+        text: "",
+        icon: "",
+        path: "/"
     },
     {
         text: "Mac",
         icon: "",
+        path: "mac/",
         sublinks: [{
             text: "MacBook Air",
             icon: ""
@@ -53,6 +55,7 @@ export default links = [{
     {
         text: "iPad",
         icon: "",
+        path: "ipad/",
         sublinks: [{
             text: "iPad Pro",
             icon: ""
@@ -97,6 +100,7 @@ export default links = [{
     {
         text: "iPhone",
         icon: "",
+        path: "iphone/",
         sublinks: [{
             text: "iPhone 11 Pro",
             icon: ""
@@ -137,6 +141,7 @@ export default links = [{
     {
         text: "Watch",
         icon: "",
+        path: "watch/",
         sublinks: [{
             text: "Apple Watch Series 6 New",
             icon: ""
@@ -189,6 +194,7 @@ export default links = [{
     {
         text: "TV",
         icon: "",
+        path: "tv/",
         sublinks: [{
             text: "Apple TV+",
             icon: ""
@@ -217,6 +223,7 @@ export default links = [{
     {
         text: "Music",
         icon: "",
+        path: "music/",
         sublinks: [{
             text: "Apple Music",
             icon: ""
@@ -252,13 +259,16 @@ export default links = [{
     },
     {
         text: "Support",
-        icon: ""
+        icon: "",
+        path: "support/"
     },
     {
         text: "Search",
-        icon: ""
+        icon: "",
+        path: "search/"
     },
     {
         text: "Cart",
-        icon: ""
+        icon: "",
+        cart: "cart/"
 }]
