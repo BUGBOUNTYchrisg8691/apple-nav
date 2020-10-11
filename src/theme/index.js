@@ -1,3 +1,3 @@
 export default {
-    white: "white",
+    white: "whitesmoke",
 }
