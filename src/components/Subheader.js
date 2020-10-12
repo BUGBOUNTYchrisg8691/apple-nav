@@ -1,9 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import {useParams, NavLink} from "react-router-dom"
 
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
 
 import {sublinks} from "./sublinks"
+
+const slideInRight = keyframes`
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+`
 
 const StyledDiv = styled.div`
     background-color: ${props => props.theme.white};
@@ -13,6 +23,9 @@ const StyledDiv = styled.div`
     justify-content: space-evenly;
     align-items: center;
     height: 10vh;
+    animation-name: ${slideInRight};
+    animation-duration: 1s;
+    animation-fill-mode: both;
 `
 
 const NavLinkStyled = styled(NavLink)`
